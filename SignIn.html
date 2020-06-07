@@ -3,42 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | ToDo List</title>
+    <title>Sign In to ToDo List | ToDo List</title>
     <!-- Linking -->
-    <link rel="stylesheet" href="CSS/Welcome.css">
+    <link rel="stylesheet" href="CSS/SignIn.css">
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bellota:wght@700&family=Black+Ops+One&family=Michroma&family=Montserrat:wght@500;700&family=Orbitron:wght@700&family=Piedra&family=Poiret+One&family=Seaweed+Script&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <!-- Header -->
     <div>
         <nav class="navbar navbar-expand-lg navbar-light"">
-            <a class="navbar-brand navTitle" style="color: red; font-size: 200%;">ToDo List </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <a class="navbar-nav nav-link mr-auto mt-2 mt-lg-0 navItem" href="#"></a>
-              <form class="form-inline my-2 my-lg-0">
-                <a class="nav-link my-2 my-sm-0 navItem" href="SignIn.html">Sign In</a>
-              </form>
-            </div>
+            <a class="navbar-brand navItem" style="color: red; font-size: 200%;">ToDo List </a>
         </nav>
     </div>
     <!-- Content -->
-    <div class="content">
-        <div class="box"></div>
-        <a class="head">Organize it all<br>with ToDo List</a>
-        <a class="btn btn-danger" href="SignIn.html">Get Started</a>
-        <div class="bgImage"></div>
+    <p class="para">rganizing your tasks with a list can make everything much more manageable and make you feel grounded. Seeing a clear outline of your completed and uncompleted tasks will help you feel organized and stay mentally focused.</p><hr>
+    <div class="content  container-fluid" style="min-height: 100vh;">
+        <form class="box">
+            <h1>Login</h1>
+            <input type="text" required="" id="username" placeholder="Username">
+            <p for="username-check" id="user-error"></p>
+            <input type="password" required="" id="password" placeholder="Password">
+            <p for="password-check" id="password-error"></p>
+            <input type="submit" onclick="redirect()" value="Sign In" id="submit" class="login-btn text-decoration-none">
+            <a class="b1 text-decoration-none" href="#" target="">FORGOT PASSWORD ?</a>
+            <a class="b2 text-decoration-none" href="SignUp.html" target="_blank">CREATE AN ACCOUNT</a>
+          </form>
     </div>
     <!-- Footer -->
     <div>
@@ -46,5 +41,6 @@
         <p style="text-align: center;">For educational Purposes @<a href="https://github.com/Justinjdaniel/SimpleToDoListWebApp">To-Do List</a>, by <a href="https://github.com/Justinjdaniel/">Justin J</a>. <br>All Rights Reserved© 2020</p>
       </footer>
     </div>
+    <script src="/JS/SignIn.js"></script>
 </body>
 </html>
