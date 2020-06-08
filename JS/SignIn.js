@@ -11,6 +11,7 @@ function redirect(){
         passworderror.innerHTML = "Username & Password is Right ☺";
         passworderror.style.color = "green";
         callback();
+        alert("success");
         }
     else{
         passworderror.innerHTML = "Username or Password is Wrong ☹";
@@ -19,9 +20,7 @@ function redirect(){
     }
 
     function homepage(){
-        alert("success");
         window.location.href = "Home.html";
     }
-
-validate(homepage);
+    validate(homepage);
 }
