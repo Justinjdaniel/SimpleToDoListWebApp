@@ -7,7 +7,7 @@ let passworderror = document.getElementById("password-error");
 function redirect(){
 
     function validate(callback){
-    if((username.value == "admin")&(password.value == 12345)){
+    if((username.value == "admin")&&(password.value == 12345)){
         passworderror.innerHTML = "Username & Password is Right ☺";
         passworderror.style.color = "green";
         callback();
@@ -19,6 +19,7 @@ function redirect(){
     }
 
     function homepage(){
+        alert("success");
         window.location.href = "Home.html";
     }
 
