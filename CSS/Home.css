@@ -48,7 +48,7 @@ body{
     position: sticky;
     border: 3px solid red;
     border-radius: 100%;
-    bottom: 40px;
+    bottom: 30px;
     left: 90%;
 }
 .new:hover{
@@ -124,7 +124,14 @@ th{
 td{
     text-transform: capitalize;
 }
-
+#submit{
+    position: sticky;
+    bottom: 45px;
+    background: white
+}
+#submit:hover{
+    background: red;
+}
 footer{
     position: absolute;
     margin-left: 38%;
