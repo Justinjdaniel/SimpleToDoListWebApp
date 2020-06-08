@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bellota:wght@700&family=Black+Ops+One&family=Michroma&family=Montserrat:wght@500;700&family=Orbitron:wght@700&family=Piedra&family=Poiret+One&family=Seaweed+Script&display=swap');
+
+/* -----------------------------------
+font-family: 'Audiowide', cursive;
+font-family: 'Bellota', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Michroma', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Piedra', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Seaweed Script', cursive;
+------------------------------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+.navTitle{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    color: black;
+    font-weight: bold;
+}
+.navItem{
+    padding: 10px;
+    font-family: 'Michroma', sans-serif;
+    transform: scale(1.1);
+    color: black;
+    font-weight: bold;
+}
+.navItem:hover{
+    transform: scale(1);
+    color: red;
+    border-bottom: 2px solid red;
+}
+.new{
+    font-weight: bold;
+    font-size: 250%;
+    font-family: 'Black Ops One', cursive;
+    padding: 0px 18px;
+    position: sticky;
+    border: 3px solid red;
+    border-radius: 100%;
+    bottom: 40px;
+    left: 90%;
+}
+.new:hover{
+    background-color: red;
+    color: #fff;
+}
+.welMsg{
+    margin: 10px 14%;
+    margin-top: 30px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+.welMsg::before{
+    content: 'W';
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 200%;
+    font-family: 'Montserrat', sans-serif;
+}
+.content{
+    margin: 10px 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+.login-btn{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid red;
+    padding: 14px 40px;
+    width: 150px;
+    outline: none;
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.login-btn:hover{
+    background: red;
+    transform: scale(0.8);
+    color: #fff;
+}
+#intro{
+    margin: 10px 14%;
+    margin-top: 30px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+#intro::before{
+    content: 'A';
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+}
+table{
+    width: 90%;
+    margin: 10px 50px;
+}
+table,th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+th{
+    text-align: center;
+    padding: 10px;
+    transform: scale(1.2);
+}
+td{
+    text-transform: capitalize;
+}
+
+footer{
+    position: absolute;
+    margin-left: 38%;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}

@@ -6,6 +6,7 @@
     <title>Home | ToDo List</title>
     <!-- Linking -->
     <link rel="stylesheet" href="CSS/Home.css">
+    <link rel = "icon" href ="Logo01.png" type = "image/x-icon">
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -26,7 +27,14 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <a class="navbar-nav nav-link mr-auto mt-2 mt-lg-0 navItem" href="#" style="margin-left: 10px;">Home</a>
               <form class="form-inline my-2 my-lg-0">
-                <a class="nav-link mr-sm-2 navItem" href="">To Do List</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mr-sm-2 navItem" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">To Do List</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item navItem" href="#">Create New</a><hr>
+                        <a class="dropdown-item navItem" onclick="List()" href="#">Case Study 01</a>
+                        <a class="dropdown-item navItem" href="#">Sample 02</a>
+                    </div>
+                </div>
                 <a class="nav-link my-2 my-sm-0 navItem" href="Welcome.html">Sign Out</a>
               </form>
             </div>
@@ -34,13 +42,23 @@
     </div>
     <!-- Content -->
     <div>
-
+        <p class="welMsg">elcome to ToDo List Web Application. You can Create New To Do List by clicking the bottom right corner '+' button and access your already created To Do list from the 'ToDo List' button in the navigation bar at the top right corner.</p><hr>
+        <div class="content">
+            <h2>Case Study 01</h2>
+            <p id="intro">fter sucessfully completing a task mark the corresponding 'Activity' and Submit. Complete alteast 5 tasks daily, In case if the list wont show up refresh and try again.</p><hr><br>
+            <table id="table">
+                <input type="submit" onclick="List()" value="SHOW" id="showbtn" class="login-btn text-decoration-none">
+            </table>
+            <input type="submit" onclick="TaskStatus()" value="Submit" id="submit" class="login-btn text-decoration-none" style="display: none;">
+        </div>
+        <button class="new">+</button>
     </div>
     <!-- Footer -->
     <div>
       <footer class="mastfoot mt-auto">
-        <p style="text-align: center;">For educational Purposes @<a href="https://github.com/Justinjdaniel/SimpleToDoListWebApp">To-Do List</a>, by <a href="https://github.com/Justinjdaniel/">Justin J</a>. <br>All Rights Reserved© 2020</p>
+        <hr><p style="text-align: center;">For educational Purposes @<a href="https://github.com/Justinjdaniel/SimpleToDoListWebApp">To-Do List</a>, by <a href="https://github.com/Justinjdaniel/">Justin J</a>. <br>All Rights Reserved© 2020</p>
       </footer>
     </div>
+    <script src="/JS/Home.js"></script>
 </body>
 </html>
