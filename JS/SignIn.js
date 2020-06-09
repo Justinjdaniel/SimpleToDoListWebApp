@@ -13,7 +13,7 @@ function redirect(){
         passworderror.innerHTML = "Username & Password is Right ☺";
         passworderror.style.color = "green";
         callback();
-        alert("success");
+        // alert("You are Redirecting...");
         }
     else{
         username.style.border = "2px solid red";
