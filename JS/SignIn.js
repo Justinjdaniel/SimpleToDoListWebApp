@@ -8,12 +8,16 @@ function redirect(){
 
     function validate(callback){
     if((username.value == "admin")&&(password.value == 12345)){
+        username.style.border = "2px solid green";
+        password.style.border = "2px solid green";
         passworderror.innerHTML = "Username & Password is Right ☺";
         passworderror.style.color = "green";
         callback();
         alert("success");
         }
     else{
+        username.style.border = "2px solid red";
+        password.style.border = "2px solid red";
         passworderror.innerHTML = "Username or Password is Wrong ☹";
         passworderror.style.color = "red";
         }
